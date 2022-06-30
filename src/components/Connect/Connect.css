@@ -108,5 +108,9 @@ button{
         flex-direction: column;
         height: fit-content;
     }
+    .connect{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
 }

@@ -1,10 +1,16 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import './Home.css'
 import profile from '../../image/profile.jpg'
+import { ThemeContext } from '../Context'
 
 export default function Home() {
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
+
   return (
-    <div className='i' id='home'>
+    <div className='i' id='home' style={{backgroundColor: darkMode && 'black', color: darkMode && 'white'}}>
         <div className='i-left'>
             <div className='i-left-wrapper'>
                 <h2 className='i-intro'>Hello, My name is</h2>

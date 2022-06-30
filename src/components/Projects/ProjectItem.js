@@ -14,7 +14,7 @@ export default function ProjectItem({ image, name, description, links}) {
         <div className='bgImage'><img src={image} className='img'/></div>
         <div className='p-right'>
         <h1>{name}</h1>
-        <p>{description}</p>
+        <p className='desc'>{description}</p>
         {/* <div><FaGlobe />    <FaGithub /></div> */}
         <div>{links}</div>
         </div>

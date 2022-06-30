@@ -3,7 +3,7 @@
     color: black;
     padding: 10px 20px;
     position: fixed;
-    background-color: aqua;
+    background-color: #4D9EFE;
     z-index: 85;
 }
 
@@ -28,10 +28,10 @@
     display: flex;
     align-items: center;
     gap: 45px;
-    font-weight: 300px;
     font-size: 16px;
     max-width: fit-content;
     font-size: 20px;
+
 }
 
 .nav-list div{
