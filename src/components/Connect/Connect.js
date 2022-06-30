@@ -15,17 +15,17 @@ export default function Connect() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm(
-    //   'service_y132s0w', 
-    //   'template_ommvrdt', 
-    //   form.current, 
-    //   'JvDuvc6mGJZa5kaBX'
-    //   )
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
+    emailjs.sendForm(
+      'service_y132s0w', 
+      'template_ommvrdt', 
+      form.current, 
+      'JvDuvc6mGJZa5kaBX'
+      )
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
 
   }
 
@@ -39,17 +39,18 @@ export default function Connect() {
             <div className='c-left' >
                 {/* <div className='c-left-wrapper'>left</div> */}
                 <div className='connect' style={{backgroundColor: darkMode && "#333", borderRadius: "20px"}}>
-                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaGithub />&nbsp;Github</div>
-                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaLinkedin />&nbsp;LinkedIn</div>
-                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaTwitterSquare />&nbsp;Twitter</div>
-                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaFacebook />&nbsp;Facebook</div>
-                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaInstagram />&nbsp;Instagram</div>
+                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaGithub />&nbsp;<a href='https://github.com/AbhinabaDe01' target='_blank' style={{color: darkMode ? "white" : "black"}}>Github</a></div>
+                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaLinkedin />&nbsp;<a href='https://www.linkedin.com/in/abhinaba-de-1836b81b4/' target='_blank' style={{color: darkMode ? "white" : "black"}}>LinkedIn</a></div>
+                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaTwitterSquare />&nbsp;<a href='https://twitter.com/mrzordel' target='_blank' style={{color: darkMode ? "white" : "black"}}>Twitter</a></div>
+                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaFacebook />&nbsp;<a href='https://www.facebook.com/' target='_blank' style={{color: darkMode ? "white" : "black"}}>Facebook</a></div>
+                  <div className='connect-list' style={{display:"flex", alignItems: "center"}}><FaInstagram />&nbsp;<a href='https://www.instagram.com/deabhinaba/' target='_blank' style={{color: darkMode ? "white" : "black"}}>Instagram</a></div>
+                  
                 </div>
             </div>
             <div className='c-right'>
                 {/* <div className='c-right-wrapper'>right</div> */}
                 <div className='c-desc' >
-                  <p><b>connect </b>with me, send me a mail!</p>
+                  <p><b>connect </b>with me, send me a mail at <b>deabhinaba@gmail.com</b></p>
                   <form ref={form} onSubmit={handleSubmit}>
                     <input type='text' placeholder='name' name='user_name' required/>
                     <input type='text' placeholder='subject' name='user_subject' required/>
