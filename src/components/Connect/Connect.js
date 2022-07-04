@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { ThemeContext } from '../Context';
 import './Connect.css'
 import {FaLinkedin, FaTwitterSquare, FaFacebook, FaInstagram, FaGithub} from 'react-icons/fa'
@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 export default function Connect() {
 
 
-
+  const [done, setDone] = useState(false)
 
   const form = useRef();
 
@@ -23,8 +23,10 @@ export default function Connect() {
       )
       .then((result) => {
           console.log(result.text);
+          setDone(true)
       }, (error) => {
           console.log(error.text);
+          setDone(false)
       });
 
   }
@@ -56,7 +58,10 @@ export default function Connect() {
                     <input type='text' placeholder='subject' name='user_subject' required/>
                     <input type='text' placeholder='email' name='user_email' required/>
                     <textarea rows='5' placeholder='message' name='message'required/>
-                    <button>Submit</button>
+                    <div style={{display: 'flex', flexDirection: 'row', gap: '10px' ,alignItems: 'center'}}>
+                    <button>Submit</button><span>{done && <p>Thank you, mail has been sent</p>}</span>
+                    </div>
+                    
                   </form>
                 </div>
             </div>
