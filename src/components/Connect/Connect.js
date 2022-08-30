@@ -64,7 +64,7 @@ export default function Connect() {
                     <textarea rows='5' placeholder='message' name='message'required/>
                     <div style={{display: 'flex', flexDirection: 'row', gap: '10px' ,alignItems: 'center'}}>
                     <motion.button 
-                    whileHover={{ scale: 1.15 , backgroundColor: 'black', color: 'white' }}
+                    whileHover={{ scale: 1.15, boxShadow: "4px 17px 35px -2px rgba(232,30,232,1)" }}
                     >Submit</motion.button><span>{done && <p>Thank you, mail has been sent</p>}</span>
                     </div>
                     

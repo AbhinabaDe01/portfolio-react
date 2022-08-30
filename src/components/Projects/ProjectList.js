@@ -50,7 +50,7 @@ export const projectList = [
     {
         name:"Pizza Hub",
         image: Pizza,
-        description: "A simple pizza ordering ordering app using React, used library Framer Motion",
+        description: "A simple pizza ordering app using React, used library Framer Motion",
         links: <div className='icons'><a href='https://pizza-hub-sigma.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/pizza-hub' target="_blank" className="git"><FaGithub /></a></div>
     },
     {
