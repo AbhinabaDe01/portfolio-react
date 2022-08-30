@@ -3,6 +3,8 @@ import './Home.css'
 import profile from '../../image/profile.jpg'
 import { ThemeContext } from '../Context'
 
+import {motion} from 'framer-motion'
+
 export default function Home() {
 
     const theme = useContext(ThemeContext);
@@ -31,7 +33,7 @@ export default function Home() {
         </div>
         <div className='i-right'>
             <div className='cont'>
-            <img src={profile} className='i-img' />
+            <motion.img src={profile} className='i-img' whileHover={{scale: 1.15}}/>
             </div>
             
         </div>

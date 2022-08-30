@@ -5,6 +5,7 @@
     position: fixed;
     background-color: #4D9EFE;
     z-index: 85;
+    height: 70px;
 }
 
 .nav-container{
@@ -18,10 +19,6 @@
     font-size: 24px;
     font-weight: 700;
     padding: 10px 20px;
-}
-
-.brand:hover{
-    color:purple;
 }
 
 .nav-list{
@@ -42,13 +39,15 @@
 }
 
 .nav-list div:hover{
-    background-color: black;
+    background-color: rgb(224, 0, 231);
     color: white;
     transition: 0.2s ease-in;
 }
 .nav-list a{
     text-decoration: none;
     color: black;
+    letter-spacing: .15em;
+    font-weight: bold;
 }
 
 .nav-list a:hover{

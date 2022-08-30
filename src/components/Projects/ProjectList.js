@@ -7,6 +7,8 @@ import Proj5 from '../../assets/img5.jpg'
 import Proj6 from '../../assets/img6.jpg'
 import Proj7 from '../../assets/img7.jpg'
 import Proj8 from '../../assets/img8.jpg'
+import Todo from '../../assets/todo-app.JPG'
+import Pizza from '../../assets/pizza-hub.jpg'
 
 
 
@@ -26,11 +28,30 @@ export const projectList = [
         description : "A Static website using HTML and Tailwind CSS",
         links: <div className='icons'><a href='https://abhinabade01.github.io/Pricing-Plans/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/Pricing-Plans' target="_blank" className="git"><FaGithub /></a></div>
     },
+    
+    // {
+    //     name:"Recipe List",
+    //     image: Proj5,
+    //     description: "A Recipe listing website using React and Firebase",
+    //     links: <div className='icons'><a href='https://recipe-list-sigma.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/Recipe-List' target="_blank" className="git"><FaGithub /></a></div>
+    // },
+    // {
+    //     name:"Photo Gallery",
+    //     image: Proj6,
+    //     description: "A Photo Gallery showacase using React and Firebase",
+    //     links: <div className='icons'><a href='https://photo-gallery-peach.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='' target="_blank" className="git"><FaGithub /></a></div>
+    // },
     {
-        name:"Crypto Finance Tracker",
-        image: Proj3,
-        description: "A Crypto Finance Tracker website using React and fetching Api",
-        links: <div className='icons'><a href='https://crypto-finance-tracker-ashen.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/crypto-finance-tracker' target="_blank" className="git"><FaGithub /></a></div>
+        name:"Todo List",
+        image: Todo,
+        description: "A simple todo app using React and localstorage",
+        links: <div className='icons'><a href='https://todo-app-henna-one.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/todo-app' target="_blank" className="git"><FaGithub /></a></div>
+    },
+    {
+        name:"Pizza Hub",
+        image: Pizza,
+        description: "A simple pizza ordering ordering app using React, used library Framer Motion",
+        links: <div className='icons'><a href='https://pizza-hub-sigma.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/pizza-hub' target="_blank" className="git"><FaGithub /></a></div>
     },
     {
         name:"Weather App",
@@ -39,16 +60,10 @@ export const projectList = [
         links: <div className='icons'><a href='https://weather-react-app-ruby.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/weather-react-app' target="_blank" className="git"><FaGithub /></a></div>
     },
     {
-        name:"Recipe List",
-        image: Proj5,
-        description: "A Recipe listing website using React and Firebase",
-        links: <div className='icons'><a href='https://recipe-list-sigma.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/Recipe-List' target="_blank" className="git"><FaGithub /></a></div>
-    },
-    {
-        name:"Photo Gallery",
-        image: Proj6,
-        description: "A Photo Gallery showacase using React and Firebase",
-        links: <div className='icons'><a href='https://photo-gallery-peach.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='' target="_blank" className="git"><FaGithub /></a></div>
+        name:"Crypto Finance Tracker",
+        image: Proj3,
+        description: "A Crypto Finance Tracker website using React and fetching Api",
+        links: <div className='icons'><a href='https://crypto-finance-tracker-ashen.vercel.app/' target="_blank" ><FaGlobe className="globe" /></a>&nbsp;&nbsp;<a href='https://github.com/AbhinabaDe01/crypto-finance-tracker' target="_blank" className="git"><FaGithub /></a></div>
     },
     {
         name:"Memory Match",
