@@ -33,7 +33,7 @@ export default function About() {
         <motion.div className='a-right' style={{backgroundColor: !darkMode && '#333', color: !darkMode && 'white'}} >
             <div className='a-right-wrapper'>
                 <h2 style={{borderBottom: '1px solid white'}}>Education</h2>
-                <div style={{textAlign: 'center'}}><b>Schooling- </b>Patha Bhavan, Kolkata. <br></br> 2016 secondary <br></br> 2019 Higher secondary</div>
+                <div style={{textAlign: 'center'}}><b>Schooling- </b>Patha Bhavan, Kolkata. <br></br> 2017 secondary <br></br> 2019 Higher secondary</div>
                 <div style={{textAlign: 'center'}}><b>Graduation- </b>St. Thomas' College of Engineering and Technology<br></br>( 2019 - 2023), Currently an undergrad, pursuing B.Tech. in Computer Science and Engineering.</div>
             </div>
             
